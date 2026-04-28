@@ -1,6 +1,8 @@
 # Analog clock reader
 A Computer Vision project built with Python and OpenCV that automatically detects and reads the time from images of analog clocks using line and circle detection algorithms.
 
+**Note:** This project is currently optimized for synthetic/drawn analog clock images. It is under active development, with the primary goal of supporting real-world photographs of analog clocks in future iterations.
+
 ## Features
 
 * **Image preprocessing:** Uses blurring and thresholding to clean up the input images.
@@ -8,6 +10,7 @@ A Computer Vision project built with Python and OpenCV that automatically detect
 * **Line detection:** Employs edge detection and skeletonization (`skimage.morphology`) to find the exact positions of the clock hands.
 * **Mathematical conversion:** Calculates the spatial angles of the detected lines (`skspatial.objects`) and maps them to standard clock hours and minutes.
 * **Error analysis:** Includes accuracy testing against a dictionary of true values to calculate the mean absolute error across a dataset of test clocks.
+* **In development:** Ongoing work to implement robust detection for real-life analog clock photos (handling shadows, reflections, and varied backgrounds).
 
 ## Tech stack
 
